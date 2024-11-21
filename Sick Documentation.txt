@@ -1,0 +1,65 @@
+
+
+Iniciar
+
+/*UP*/
+void up() {
+  delay(300);
+
+  if (menu > 0){
+    menu = menu*(-1);
+    }
+  else if (menu < 0){
+    menu = menu + 1;   
+    };
+}
+
+
+
+/*DOWN*/
+void down(){
+  delay(300);
+
+  if (menu < 0){
+    menu = menu*(-1);
+    }
+  else if (menu >= 0){
+    menu = menu + 1;   
+    };  
+}
+
+
+Int Menu = 0
+
+
+-4	> Opcao 4
+	Opcao 5
+
+-3	> Opcao 3
+	Opcao 4
+
+-2	> Opcao 2
+	Opcao 3
+
+-1	> Opcao 1
+	Opcao 2 
+
+-----------------------------------------------------
+
+0 	> 
+	Opcao 1
+
+-----------------------------------------------------
+
+1	Opcao 1
+	> Opcao 2
+
+2	Opcao 2
+	> Opcao 3
+
+3	Opcao 3
+	> Opcao 4
+
+4	Opcao 4
+   	> Opcao 5
+
