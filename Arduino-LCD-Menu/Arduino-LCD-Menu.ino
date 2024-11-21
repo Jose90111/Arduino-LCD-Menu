@@ -35,7 +35,7 @@ void setup() {
 
 void loop() {
 
-  delay(50);
+  delay(70);
   btn = analogRead(0);
 
   /*APERTO DE BOTÃO*/
@@ -74,7 +74,7 @@ void loop() {
       lcd.clear();
       lcd.setCursor(0,0); lcd.print("> Opcao 1      ^");
       lcd.setCursor(0,1); lcd.print("Opcao 2        v"); 
-    break;*
+    break;
     
     case 0: 
       lcd.clear();
@@ -114,15 +114,12 @@ void loop() {
  /* */
 /* SELECT */
 void select() {
-  lcd.clear();
-  lcd.setCursor(0,0);
-  lcd.print("Select");  
- 
+
 }
 
 /*UP*/
 void up() {
-  delay(300);
+  delay(200);
 
   if (menu > 0){
     menu = menu*(-1);
@@ -136,7 +133,7 @@ void up() {
 
 /*DOWN*/
 void down(){
-  delay(300);
+  delay(200);
 
   if (menu < 0){
     menu = menu*(-1);
