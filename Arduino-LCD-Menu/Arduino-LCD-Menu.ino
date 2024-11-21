@@ -29,6 +29,9 @@ void setup() {
   Serial.begin(9600);
   lcd.begin(16,2);
 
+  pinMode(13, OUTPUT);  // Configura o pino 13 como saída
+  digitalWrite(13, LOW); // Desliga o LED embutido
+
 }
 
 
