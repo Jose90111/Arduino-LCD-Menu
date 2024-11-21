@@ -48,9 +48,6 @@ void loop() {
     };
 
   /*ORQUESTRADOR DE MENU*/
-  Serial.print("Menu: ");
-  Serial.println(menu);
-  
   switch (menu){
      case -4: 
       lcd.clear();
@@ -105,13 +102,10 @@ void loop() {
       lcd.setCursor(0,0); lcd.print("Opcao 4        ^");
       lcd.setCursor(0,1); lcd.print("> Opcao 5"); 
     break;
-    
   }
-    
 }
 
 
- /* */
 /* SELECT */
 void select() {
 
@@ -127,8 +121,6 @@ void up() {
   else if (menu < 0){
     menu = menu + 1;   
     };
-  
-  
 }
 
 /*DOWN*/
@@ -144,7 +136,6 @@ void down(){
     else if (menu >= 0){
         menu = menu + 1;
       };  
-  
 }
 
 /*LEFT*/
